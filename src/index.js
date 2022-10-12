@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { ThemeProvider } from './context/CardColor';
+import { CardColorProvider } from './context/CardColor';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
+    <CardColorProvider>
       <App />
-    </ThemeProvider>
+    </CardColorProvider>
   </React.StrictMode>
 );
