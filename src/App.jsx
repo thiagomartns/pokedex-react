@@ -3,7 +3,9 @@ import axios from "axios";
 
 
 function App() {
+    
     const [pokemons, setPokemons] = useState([]);
+
     useEffect(() => {
       getPokemons();
     }, []);
@@ -32,6 +34,7 @@ function App() {
               <div className="info">
                 <span className="number">#{item.data.id}</span>
                 <h3 className="name">{item.data.name}</h3>
+                <h5 className="type">{item.data.types[0].type.name}</h5>
               </div>
             </div>
           

@@ -61,7 +61,8 @@ h1 {
   font-size: 0.8rem;
 }
 
-.pokemon .info .name {
+.pokemon .info .name,
+.pokemon .info .type {
   margin: 15px 0 7px;
   letter-spacing: 1px;
   text-transform: capitalize;
