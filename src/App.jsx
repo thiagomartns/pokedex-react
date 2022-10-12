@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import axios from "axios";
+import { ThemeContext } from "./context/CardColor";
 
 
 function App() {
     
     const [pokemons, setPokemons] = useState([]);
+
+    const { backgroundColor } = useContext(ThemeContext)
 
     useEffect(() => {
       getPokemons();
@@ -27,7 +30,7 @@ function App() {
 
           {pokemons.map((item, index) => (
 
-            <div className="pokemon" key={index} style={{backgroundColor: "rgb(222, 253, 224)"}} >
+            <div className="pokemon" key={index} style={{backgroundColor: backgroundColor}} >
               <div className="img-container">
                 <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index + 1}.png`} alt="" />
               </div>
