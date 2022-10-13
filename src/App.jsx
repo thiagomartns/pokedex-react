@@ -31,11 +31,8 @@ function App() {
 
           {pokemons.map((item, index) => (
 
-            <div className="pokemon" 
-              key={index} 
-              style={{
-                backgroundColor: backgroundColor
-              }} >
+            <div className={`pokemon ${item.data.types[0].type.name}`} 
+              key={index}  >
               <div className="img-container">
                 <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index + 1}.png`} alt="" />
               </div>
