@@ -97,6 +97,14 @@ h1 {
   background-color: #97b3e6;
 }
 
+.pokemon.dark {
+  background-color: #b39bd8;
+}
+
+.pokemon.steel {
+  background-color: #c6c6c6;
+}
+
 .pokemon .img-container {
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 50%;
