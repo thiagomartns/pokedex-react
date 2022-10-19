@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
+// import { Modal, Box } from '@mui/material'
+import ModalCard from './ModalCard'
 
 const PokeCard = ({ item, index }) => {
+
+  const [open, setOpen] = useState(false)
+
+
   return (
     <div>
-      <div 
+      <div
+        onClick={() => setOpen(true)}
         className={`pokemon ${item.types[0].type.name}`} 
         key={index}
       >
@@ -16,6 +23,7 @@ const PokeCard = ({ item, index }) => {
           <h5 className="type" >{item.types[0].type.name}</h5>
         </div>
       </div>
+      <ModalCard open={open} setOpen={setOpen} />
     </div>
   )
 }

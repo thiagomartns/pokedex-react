@@ -94,7 +94,9 @@ function App() {
         </div>
         <div className="poke-container" id="poke-container">
           {pokemons.map((item, index) => (
-            <PokeCard item={item.data} index={index} />
+            <PokeCard
+              item={item.data} 
+              index={index} />
           ))}
         </div>
       </div>

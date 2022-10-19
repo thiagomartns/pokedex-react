@@ -4,7 +4,7 @@ export const CardColor = createContext()
 
 export function CardColorProvider({ children }) {
 
-  const [generation, setGeneration] = useState('1')
+  const [generation, setGeneration] = useState('')
 
   const handleChange = (event) => {
     setGeneration(event.target.value);
