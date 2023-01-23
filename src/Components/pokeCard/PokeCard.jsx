@@ -5,7 +5,10 @@ const PokeCard = ({ index, item }) => {
 
   return (
     <>
-      <div className="pokemon pokemon-type" key={index}>
+      <div 
+        className={`pokemon ${item.types[0].type.name}`}
+        key={index}
+      >
         <div className="img-container">
           <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${item.id}.png`} alt="" />
         </div>
