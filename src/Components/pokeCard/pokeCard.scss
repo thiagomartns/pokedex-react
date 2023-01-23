@@ -40,70 +40,8 @@
   }
 }
 
-.pokemon.grass {
-  background-color: $grass;
-}
-
-.pokemon.fire {
-  background-color: $fire;
-}
-
-.pokemon.water {
-  background-color: $water;
-}
-
-.pokemon.bug {
-  background-color: $bug;
-}
-
-.pokemon.normal {
-  background-color: $normal;
-}
-
-.pokemon.poison {
-  background-color: $poison;
-}
-
-.pokemon.electric {
-  background-color: $eletric;
-}
-
-.pokemon.fairy {
-  background-color: $fairy;
-}
-
-.pokemon.ground {
-  background-color: $ground;
-}
-
-.pokemon.psychic {
-  background-color: $psychic;
-}
-
-.pokemon.fighting {
-  background-color: $fighting;
-}
-
-.pokemon.rock {
-  background-color: $rock;
-}
-
-.pokemon.ghost {
-  background-color: $ghost;
-}
-
-.pokemon.ice {
-  background-color: $ice;
-}
-
-.pokemon.dragon {
-  background-color: $ice;
-}
-
-.pokemon.dark {
-  background-color: $dark;
-}
-
-.pokemon.steel {
-  background-color: $rock;
+@each $name, $color in $colors {
+  .#{$name} {
+    background-color: $color;
+  }
 }
